@@ -6,3 +6,6 @@ apikeys.json
 x64/
 [Bb]in/
 [Oo]bj/
+node_modules/
+.cache/
+public
