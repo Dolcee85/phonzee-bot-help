@@ -1,4 +1,5 @@
 import React from 'react';
+import style from '../styles/style.scss';
 
 export default function Layout ({ title, children}) {
   return (

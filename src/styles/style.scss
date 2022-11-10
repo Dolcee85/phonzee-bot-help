@@ -1,0 +1,36 @@
+/* --------------------- */
+/* -= Global Elements =- */
+/* --------------------- */
+
+body {
+  align-items: center;
+  background-color: black;
+  color: white;
+  min-width: 480px;
+}
+
+/* Text Selection */
+
+::selection, ::-moz-selection {
+  background: red;
+  color: white;
+}
+
+/* -------------- */
+/* -= Contents =- */
+/* -------------- */
+
+h2 {
+  font-size: 1.75 rem;
+  font-weight: normal;
+}
+
+.content-body {
+  font-size: 1.125rem;
+  display: block;
+  margin: 30px auto 30px auto;
+  max-width: 1024px;
+  min-width: 480px;
+  padding: 10px 40px 60px 40;
+  text-align: justify;
+}
