@@ -12,7 +12,7 @@ import Layout from '../components/layout';
 
 export default function Home() {
   return (
-    <Layout title="Phonzee Help">
+    <Layout title="List of Commands">
       <h2>This is header2</h2>
       <p>
         This is a paragraph
