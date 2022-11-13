@@ -9,16 +9,16 @@ export default function Layout ({ title, children}) {
         <img class="icon" src={icon}/>
         <h2>Phonzee Bot Docs</h2>
       </div>
-
-      <div class="content-navi-top">
-        <div class="content-navi-item">
-          content-navi-top
-        </div>
-      </div>
       
-      <div class="content-navi-side">
+      <div class="content-navi">
         <div class="content-navi-item">
-          content-navi-side
+          content-navi-item 1
+        </div>
+        <div class="content-navi-item">
+          content-navi-item 2
+        </div>
+        <div class="content-navi-item">
+          content-navi-item 3
         </div>
       </div>
 
