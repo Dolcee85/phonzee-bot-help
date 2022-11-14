@@ -19,7 +19,7 @@ body {
   grid-template-rows: auto auto;
   margin: 0 auto 0 auto;
   gap: 2px;
-  max-width: 900px;
+  max-width: 1080px;
 }
 
 /* Text Selection */
@@ -78,6 +78,7 @@ body {
   border: 5px solid aqua;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .content-body-container {
@@ -87,11 +88,9 @@ body {
 h2 {
   font-size: 1.75rem;
   font-weight: normal;
-  border: 5px solid blue;
 }
 
 .content-body {
-  border: 5px solid blue;
   font-size: 1.125rem;
 }
 
@@ -112,4 +111,19 @@ h2 {
     grid-row: 3;
     grid-column: 1 / 4;
   }
+}
+
+/* Table */
+
+table {
+  font-size: 1rem;
+  text-align: left;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
 }
