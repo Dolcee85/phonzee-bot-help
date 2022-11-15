@@ -10,6 +10,13 @@
 $default: 'Overpass', Arial, sans-serif;
 $code: 'Share Tech Mono', 'Consolas', monospace;
 
+/* Colour Scheme Configuration */
+
+$terminalgrey: #484848;
+$codegreen: #00ff00;
+$codeexample: #0099ff;
+$codeargreq: #ff4400;
+
 * {
   box-sizing: border-box;
 }
@@ -88,6 +95,19 @@ body {
 
 code {
   font-family: $code;
+  font-size: 0.875rem;
+  color: $codegreen;
+  background-color: $terminalgrey;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+code > .code-arg-required {
+  color: $codeargreq;
+}
+
+code > .code-example {
+  color: $codeexample;
 }
 
 .content-container {
@@ -145,4 +165,5 @@ th {
 
 td {
   padding: 10px;
+  vertical-align: text-top;
 }

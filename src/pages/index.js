@@ -19,13 +19,12 @@ export default function Home() {
       
       <p>
         <table>
-          <thead>
+          {/* <thead>
             <tr>
               <th>Command</th>
               <th>Description</th>
-              <th>Usage</th>
             </tr>
-          </thead>
+          </thead> */}
           <tbody>
             <tr>
               <td>
@@ -35,10 +34,9 @@ export default function Home() {
                 <code>bs</code><br/>
               </td>
               <td>
-                Displays the latest match events for a given club.
-              </td>
-              <td>
-                <code>ev &lt;league&gt; &lt;club&gt; &lt;date&gt;</code>
+                Displays the latest match events for a given club.<br/>
+                <code><span class="code-arg-required">&lt;league&gt; &lt;club&gt;</span> &lt;date&gt;</code><br/>
+                Example: <code><span class="code-example">z-ev mls tor 04-24</span></code>
               </td>
             </tr>
             <tr>
@@ -48,9 +46,7 @@ export default function Home() {
                 <code>scores</code><br/>
               </td>
               <td>
-                Displays the scores for a given league.
-              </td>
-              <td>
+                Displays the scores for a given league.<br/>
                 <code>s &lt;league&gt; &lt;range&gt;</code>
               </td>
             </tr>
