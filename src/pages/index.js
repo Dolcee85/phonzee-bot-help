@@ -24,7 +24,7 @@ export default function Home() {
             <code>ev</code>, <code>boxscore</code>, <code>bs</code>
           </p>
           <p>
-            <code>ev <span class="code-arg-required">&lt;league&gt;</span> <span class="code-arg-required">&lt;club&gt;</span> &lt;date&gt;</code>
+            <code>ev <span class="code-arg-required">&lt;league&gt; &lt;club&gt;</span> &lt;date&gt;</code>
           </p>
         </div>
         <div class="command-description">
@@ -41,7 +41,7 @@ export default function Home() {
           </p>
           <p>
             <code class="code-example">z-ev mls tor 04-24</code> displays the match score, status, 
-            details, and match events for an MLS match played by Toronto FC on April 24th.
+            details, and events for an MLS match played by Toronto FC on April 24th.
           </p>
         </div>
       </div>
@@ -58,10 +58,10 @@ export default function Home() {
         </div>
         <div class="command-description">
           <p>
-            Displays the scores for a given league. Check supported leagues.
+            Displays the scores for a given league.
           </p>
           <p>
-            <code class="code-arg-required">league</code> The league to display scores for.<br/>
+            <code class="code-arg-required">league</code> The league to display scores for. Check supported leagues.<br/>
             <code>range</code> Determine the schedule range of the scores: <br/>
             <div class="command-description-sub">
               <code class="code-generic">previous</code>/<code class="code-generic">p</code> Get scores from previous days, up to a week.<br/>
@@ -71,7 +71,36 @@ export default function Home() {
             If range is not given, it will get most recent scores.
           </p>
           <p>
-            <code class="code-example">z-s mls p</code> shows previously played MLS matches.
+            <code class="code-example">z-s mls p</code> shows scores for previously played MLS matches.
+          </p>
+        </div>
+      </div>
+
+      <div class="command-container">
+        <div class="command-name">
+          <p class="command-name-title">
+            <h3>Team Stats</h3>
+            <code>ts</code>, <code>cb</code>
+          </p>
+          <p>
+            <code>ts <span class="code-arg-required">&lt;league&gt; &lt;club&gt;</span> &lt;date&gt;</code>
+          </p>
+        </div>
+        <div class="command-description">
+          <p>
+            Displays the match score, status, details, and comparable stats for a given club in a 
+            given match.
+          </p>
+          <p>
+            <code class="code-arg-required">league</code> The league the club is in. Check supported leagues.<br/>
+            <code class="code-arg-required">club</code> The tri-code of the club.<br/>
+            <code>date</code> The date of the match in <code class="code-generic">MM-dd</code> format. If this is not
+            supplied, the most recent match is chosen. Any match that shows up in the Score command 
+            can be looked up.
+          </p>
+          <p>
+            <code class="code-example">z-ev mls tor 04-24</code> displays the match score, status, 
+            details, and comparable team stats for an MLS match played by Toronto FC on April 24th.
           </p>
         </div>
       </div>
