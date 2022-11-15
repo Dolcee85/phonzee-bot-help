@@ -14,8 +14,9 @@ $code: 'Share Tech Mono', 'Consolas', monospace;
 
 $terminalgrey: #484848;
 $codegreen: #00ff00;
-$codeexample: #0099ff;
+$codeexample: #00ccff;
 $codeargreq: #ff4400;
+$codegeneric: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -95,19 +96,22 @@ body {
 
 code {
   font-family: $code;
-  font-size: 0.875rem;
   color: $codegreen;
   background-color: $terminalgrey;
   padding: 2px;
   border-radius: 5px;
 }
 
-code > .code-arg-required {
+.code-arg-required {
   color: $codeargreq;
 }
 
-code > .code-example {
+.code-example {
   color: $codeexample;
+}
+
+.code-generic {
+  color: $codegeneric;
 }
 
 .content-container {
@@ -133,6 +137,56 @@ h2 {
   font-size: 1.125rem;
 }
 
+/* Table */
+
+table {
+  font-size: 1rem;
+  text-align: left;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: text-top;
+}
+
+/* Commands Listing */
+
+.command-container {
+  border: 5px solid red;
+  border-radius: 20px;
+  font-size: 1rem;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.command-name {
+  padding: 5px 10px 5px 10px;
+  margin: 1px;
+  flex-basis: 250px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.command-name-title {
+  padding-bottom: 10px;
+}
+.command-name-title > h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.command-description {
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+  margin: 1px;
+}
+
 // Mobile View
 @media screen and (max-width: 767px) {
   .content-navi {
@@ -150,20 +204,24 @@ h2 {
     grid-row: 3;
     grid-column: 1 / 4;
   }
-}
+  
+  .command-container {
+    flex-direction: column;
+  }
 
-/* Table */
+  .command-name {
+    flex-basis: 100%;
+    flex-shrink: 1;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+  }
 
-table {
-  font-size: 1rem;
-  text-align: left;
-}
+  .command-name-title > h3 {
+    font-size: 1.5rem;
+  }
 
-th {
-  padding: 10px;
-}
-
-td {
-  padding: 10px;
-  vertical-align: text-top;
+  .command-description {
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+  }
 }
