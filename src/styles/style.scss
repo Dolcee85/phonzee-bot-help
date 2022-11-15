@@ -69,9 +69,11 @@ body {
   grid-column: 1 / 4;
 
   align-items: center;
-  border: 5px solid aqua;
+  border-bottom: 5px solid rgb(255, 0, 0);
+  background-color: rgb(255, 19, 55, 0.6);
   display: flex;
   justify-content: center;
+  padding: 10px 0 10px 0;
 }
 
 /* Navi */
