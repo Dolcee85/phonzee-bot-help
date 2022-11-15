@@ -14,9 +14,12 @@ export default function Home() {
   return (
     <Layout title="List of Commands">
       <p>
-        <b>Phonzee's prefix: <code>z-</code></b>
+        <b>Phonzee's prefix:</b> <code>z-</code>
       </p>
-      
+      <p>
+        Command arguments in <code class="code-arg-required">red</code> means they're required for 
+        the command to work.
+      </p>
       <div class="command-container">
         <div class="command-name">
           <p class="command-name-title">
