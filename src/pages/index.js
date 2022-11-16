@@ -20,6 +20,9 @@ export default function Home() {
         Command arguments in <code class="code-arg-required">red</code> means they're required for 
         the command to work.
       </p>
+
+      {/* Events */}
+
       <div class="command-container">
         <div class="command-name">
           <p class="command-name-title">
@@ -49,6 +52,90 @@ export default function Home() {
         </div>
       </div>
 
+      { /* Feedback */ }
+
+      <div class="command-container">
+        <div class="command-name">
+          <p class="command-name-title">
+            <h3>Feedback</h3>
+            <code>fb</code>, <code>suggest</code>
+          </p>
+          <p>
+            <code>fb <span class="code-arg-required">&lt;message&gt;</span> </code>
+          </p>
+        </div>
+        <div class="command-description">
+          <p>
+            Send feedback to help improve Phonzee!
+          </p>
+          <p>
+            <code class="code-arg-required">message</code> The feedback message.
+          </p>
+          <p>
+            <code class="code-example">z-fb mls scores arent showing properly</code>
+          </p>
+        </div>
+      </div>
+
+      { /* Help */}
+      
+      <div class="command-container">
+        <div class="command-name">
+          <p class="command-name-title">
+            <h3>Help</h3>
+            <code>help</code>
+          </p>
+        </div>
+        <div class="command-description">
+          <p>
+            Posts a link to the Phonzee help documentation.
+          </p>
+          <p>
+            <code class="code-example">z-help</code>
+          </p>
+        </div>
+      </div>
+
+      { /* Leagues */ }
+
+      <div class="command-container">
+        <div class="command-name">
+          <p class="command-name-title">
+            <h3>Leagues</h3>
+            <code>leagues</code>
+          </p>
+        </div>
+        <div class="command-description">
+          <p>
+            Displays all of the leagues and supported bot features.
+          </p>
+          <p>
+            <code class="code-example">z-leagues</code>
+          </p>
+        </div>
+      </div>
+
+      { /* Phonzee */}
+
+      <div class="command-container">
+        <div class="command-name">
+          <p class="command-name-title">
+            <h3>Phonzie</h3>
+            <code>phonzie</code>, <code>phonzee</code>, <code>phonzy</code>
+          </p>
+        </div>
+        <div class="command-description">
+          <p>
+            👀
+          </p>
+          <p>
+            <code class="code-example">z-phonzie</code>
+          </p>
+        </div>
+      </div>
+
+      { /* Scores */ }
+
       <div class="command-container">
         <div class="command-name">
           <p class="command-name-title">
@@ -68,7 +155,7 @@ export default function Home() {
             <code>range</code> Determine the schedule range of the scores: <br/>
             <div class="command-description-sub">
               <code class="code-generic">previous</code> or <code class="code-generic">p</code> Get scores from previous days, up to a week.<br/>
-              <code class="code-generic">current</code> or <code class="code-generic">c</code> Get most recent scores, including scores from yesterday and for tomorrow. The default range.<br/>
+              <code class="code-generic">current</code> or <code class="code-generic">c</code> Get most recent scores, including scores for today, from yesterday, and for tomorrow. The default range.<br/>
               <code class="code-generic">next</code> or <code class="code-generic">n</code> Get upcoming matches, up to a week.
             </div>
             If range is not given, it will get most recent scores.
@@ -78,6 +165,8 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      { /* Team Stats */ }
 
       <div class="command-container">
         <div class="command-name">

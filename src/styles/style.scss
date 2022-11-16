@@ -90,6 +90,8 @@ body {
   grid-column: 1 / 2;
 
   display: flex;
+  position: fixed;
+  top: 150px;
   flex-direction: column;
   height: 100%;
   font-family: $header;
@@ -212,6 +214,8 @@ td {
     grid-row: 2;
 
     display: flex;
+    position: static;
+    top: 0;
     flex-direction: row;
     justify-content: center;
     max-width: 100%;
