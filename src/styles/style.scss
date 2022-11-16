@@ -6,8 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$default: 'Overpass', Arial, sans-serif;
+$header: 'Overpass', Verdana, sans-serif;
+$content: 'Barlow', Arial, sans-serif;
 $code: 'Share Tech Mono', 'Consolas', monospace;
 
 /* Colour Scheme Configuration */
@@ -28,7 +30,6 @@ body {
 
 .parent-container {
   color: white;
-  font-family: $default;
   
   // Configure grid
   display: grid;
@@ -74,6 +75,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0 10px 0;
+  font-family: $header;
   text-shadow: 3px 2px rgb(0, 0, 0, 0.4);
 }
 
@@ -90,6 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: $header;
 }
 
 .content-navi-item {
@@ -106,7 +109,7 @@ code {
   font-family: $code;
   color: $codegreen;
   background-color: $terminalgrey;
-  padding: 2px;
+  padding: 2px 8px 2px 8px;
   border-radius: 5px;
 }
 
@@ -140,6 +143,7 @@ code {
 
 .content-body {
   font-size: 1.125rem;
+  font-family: $content;
 }
 
 /* Table */
@@ -183,6 +187,7 @@ td {
 }
 .command-name-title > h3 {
   font-size: 1.5rem;
+  font-family: $header;
   margin-top: 0;
   margin-bottom: 0;
 }
