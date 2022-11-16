@@ -67,9 +67,9 @@ export default function Home() {
             <code class="code-arg-required">league</code> The league to display scores for. Check supported leagues.<br/>
             <code>range</code> Determine the schedule range of the scores: <br/>
             <div class="command-description-sub">
-              <code class="code-generic">previous</code>/<code class="code-generic">p</code> Get scores from previous days, up to a week.<br/>
-              <code class="code-generic">current</code>/<code class="code-generic">c</code> Get most recent scores, including scores from yesterday and for tomorrow. The default range.<br/>
-              <code class="code-generic">next</code>/<code class="code-generic">n</code> Get upcoming matches, up to a week.
+              <code class="code-generic">previous</code> or <code class="code-generic">p</code> Get scores from previous days, up to a week.<br/>
+              <code class="code-generic">current</code> or <code class="code-generic">c</code> Get most recent scores, including scores from yesterday and for tomorrow. The default range.<br/>
+              <code class="code-generic">next</code> or <code class="code-generic">n</code> Get upcoming matches, up to a week.
             </div>
             If range is not given, it will get most recent scores.
           </p>

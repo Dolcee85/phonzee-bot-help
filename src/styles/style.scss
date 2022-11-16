@@ -14,11 +14,11 @@ $code: 'Share Tech Mono', 'Consolas', monospace;
 
 /* Colour Scheme Configuration */
 
-$terminalgrey: #36393F;
-$codegreen: #00ff00;
+$discordgrey: #36393F;
+$codegeneric: #ffffff;
 $codeexample: #00ccff;
 $codeargreq: #ff4400;
-$codegeneric: #ffffff;
+$codeargdesc: #ffaa00;
 
 * {
   box-sizing: border-box;
@@ -107,8 +107,8 @@ body {
 
 code {
   font-family: $code;
-  color: $codegreen;
-  background-color: $terminalgrey;
+  color: $codegeneric;
+  background-color: $discordgrey;
   padding: 2px 8px 2px 8px;
   border-radius: 5px;
 }
@@ -122,7 +122,7 @@ code {
 }
 
 .code-generic {
-  color: $codegeneric;
+  color: $codeargdesc;
 }
 
 .content-container {
@@ -177,7 +177,7 @@ td {
 .command-name {
   padding: 5px 10px 5px 10px;
   margin: 1px;
-  flex-basis: 250px;
+  flex-basis: 280px;
   flex-shrink: 0;
   text-align: left;
 }
@@ -185,6 +185,7 @@ td {
 .command-name-title {
   padding-bottom: 10px;
 }
+
 .command-name-title > h3 {
   font-size: 1.5rem;
   font-family: $header;
