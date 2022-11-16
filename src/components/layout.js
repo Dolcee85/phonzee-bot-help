@@ -7,7 +7,7 @@ export default function Layout ({ title, children}) {
     <div class="parent-container">
       <div class="title-container">
         <img class="icon" src={icon}/>
-        <h2>Phonzee Bot Docs</h2>
+        <h1>Phonzee Bot Docs</h1>
       </div>
 
       <div class="content-navi">
