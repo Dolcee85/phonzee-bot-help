@@ -102,7 +102,11 @@ body {
   margin: 2.5px;
   padding: 10px 20px 10px 20px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+.content-navi >  ul {
+  list-style-type: none;
 }
 
 /* Content */

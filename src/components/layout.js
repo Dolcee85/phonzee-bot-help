@@ -2,6 +2,8 @@ import React from 'react';
 import style from '../styles/style.scss';
 import icon from '../images/icon.png';
 
+import Navi from './navi';
+
 export default function Layout ({ title, children}) {
   return (
     <div class="parent-container">
@@ -10,17 +12,7 @@ export default function Layout ({ title, children}) {
         <h1>Phonzee Bot Docs</h1>
       </div>
 
-      <div class="content-navi">
-        <div class="content-navi-item">
-          content-navi-item 1
-        </div>
-        <div class="content-navi-item">
-          content-navi-item 2
-        </div>
-        <div class="content-navi-item">
-          content-navi-item 3
-        </div>
-      </div>
+      <Navi />
 
       <div class="content-container">
         <h2>{ title }</h2>
