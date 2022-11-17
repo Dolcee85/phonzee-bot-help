@@ -76,7 +76,12 @@ body {
   justify-content: center;
   padding: 10px 0 10px 0;
   font-family: $header;
-  text-shadow: 3px 2px rgb(0, 0, 0, 0.4);
+  text-shadow: 3px 2px rgb(0, 0, 0, 0.4);  
+  
+  /* Disable Text Selection */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .title-container > h1 {
