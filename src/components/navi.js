@@ -8,7 +8,7 @@ export default function Header() {
           <Link to="/">Commands</Link>
         </div>
         <div class="content-navi-item">
-          <Link to="leagues">Supported Leagues</Link>
+          <Link to="/leagues">Supported Leagues</Link>
         </div>
         <div class="content-navi-item">Release Notes</div>
     </nav>
