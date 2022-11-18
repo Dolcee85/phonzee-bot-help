@@ -8,7 +8,7 @@ export default function Home() {
       <div class="leagues-container">
         { /* Headers */}
 
-        <div class="leagues-item"></div>
+        <div class=""></div>
         <div class="leagues-item">Scores</div>
         <div class="leagues-item">Events</div>
         <div class="leagues-item">Team Stats</div>
