@@ -14,11 +14,12 @@ $code: 'Share Tech Mono', 'Consolas', monospace;
 
 /* Colour Scheme Configuration */
 
-$discordgrey: #36393F;
+$background: #36393F;
 $codegeneric: #ffffff;
 $codeexample: #00ccff;
 $codeargreq: #ff4400;
 $codeargdesc: #ffaa00;
+$codebg: #555555;
 
 * {
   box-sizing: border-box;
@@ -130,7 +131,7 @@ body {
 code {
   font-family: $code;
   color: $codegeneric;
-  background-color: $discordgrey;
+  background-color: $codebg;
   padding: 2px 8px 2px 8px;
   border-radius: 5px;
 }
@@ -188,7 +189,7 @@ td {
 /* Commands Listing */
 
 .command-container {
-  background-color: rgb(255, 19, 55, 0.4);
+  background-color: $background;
   font-size: 1rem;
   margin: 2px 0 2px 0;
   padding-left: 10px;
@@ -241,7 +242,7 @@ td {
   padding: 12px;
   text-align: center;
   color: white;
-  background-color: rgb(255, 19, 55, 0.4);
+  background-color: $background;
   font-family: $header;
   font-weight: bold;
 
