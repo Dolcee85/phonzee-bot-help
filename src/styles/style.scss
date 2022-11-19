@@ -35,7 +35,7 @@ body {
   // Configure grid
   display: grid;
   grid-template-columns: 250px auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto 150px;
   margin: 0 auto 0 auto;
   gap: 20px;
   max-width: 1080px;
@@ -281,6 +281,18 @@ td {
 
 .leagues-item-league-title > code {
   font-weight: normal;
+}
+
+/* Footer */ 
+
+footer {
+  grid-row: 3;
+  grid-column: 2 / 4;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 0.925rem;
 }
 
 // Mobile View
