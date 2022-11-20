@@ -192,22 +192,17 @@ td {
   background-color: $background;
   font-size: 1rem;
   margin: 2px 0 2px 0;
-  padding-left: 10px;
+  padding: 15px 30px 15px 30px;
   
   display: flex;
   flex-direction: row;
 }
 
 .command-name {
-  padding: 5px 10px 5px 10px;
   margin: 1px;
   flex-basis: 280px;
   flex-shrink: 0;
   text-align: left;
-}
-
-.command-name-title {
-  padding-bottom: 10px;
 }
 
 .command-name-title > h3 {
@@ -218,7 +213,6 @@ td {
 }
 
 .command-description {
-  padding: 5px 10px 5px 10px;
   width: 100%;
   margin: 1px;
 }
@@ -319,7 +313,7 @@ footer {
   
   .command-container {
     flex-direction: column;
-    padding: 5px;
+    padding: 10px 30px 10px 30px;
   }
 
   .command-name {
