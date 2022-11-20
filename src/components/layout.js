@@ -2,25 +2,19 @@ import React from 'react';
 import style from '../styles/style.scss';
 import icon from '../images/icon.png';
 
+import Navi from './navi';
+
+const phonzeeBotVersion = "1-a.4.3"
+
 export default function Layout ({ title, children}) {
   return (
     <div class="parent-container">
       <div class="title-container">
         <img class="icon" src={icon}/>
-        <h2>Phonzee Bot Docs</h2>
+        <h1>PhonzeeBot Docs</h1>
       </div>
-      
-      <div class="content-navi">
-        <div class="content-navi-item">
-          content-navi-item 1
-        </div>
-        <div class="content-navi-item">
-          content-navi-item 2
-        </div>
-        <div class="content-navi-item">
-          content-navi-item 3
-        </div>
-      </div>
+
+      <Navi />
 
       <div class="content-container">
         <h2>{ title }</h2>
@@ -28,6 +22,11 @@ export default function Layout ({ title, children}) {
           { children }
         </div>
       </div>
+
+    <footer>
+      <p>PhonzeeBot Help Documentation &copy; T-&infin; 2022</p>
+      <p>PhonzeeBot version: { phonzeeBotVersion }</p>
+    </footer>
 
     </div>
   )

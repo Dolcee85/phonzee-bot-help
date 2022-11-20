@@ -2,12 +2,31 @@
 /* -= Global Elements =- */
 /* --------------------- */
 
+/* Font Configuration */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$header: 'Overpass', Verdana, sans-serif;
+$content: 'Barlow', Arial, sans-serif;
+$code: 'Share Tech Mono', 'Consolas', monospace;
+
+/* Colour Scheme Configuration */
+
+$background: #36393F;
+$codegeneric: #ffffff;
+$codeexample: #00ccff;
+$codeargreq: #ff4400;
+$codeargdesc: #ffaa00;
+$codebg: #171A1E;
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #060606;
 }
 
 .parent-container {
@@ -16,10 +35,26 @@ body {
   // Configure grid
   display: grid;
   grid-template-columns: 250px auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto 150px;
   margin: 0 auto 0 auto;
-  gap: 2px;
-  max-width: 900px;
+  gap: 20px;
+  max-width: 1080px;
+
+  // Links
+
+  a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+    transition: 0.4s;
+  }
+
 }
 
 /* Text Selection */
@@ -32,6 +67,8 @@ body {
 /* -------------- */
 /* -= Contents =- */
 /* -------------- */
+
+/* Title */
 
 .icon {
   border: 2px solid white;
@@ -50,66 +87,253 @@ body {
   grid-column: 1 / 4;
 
   align-items: center;
-  border: 5px solid aqua;
+  border-bottom: 5px solid rgb(255, 0, 0);
+  background-color: rgb(255, 19, 55, 0.6);
   display: flex;
   justify-content: center;
+  padding: 10px 0 10px 0;
+  font-family: $header;
+  text-shadow: 3px 2px rgb(0, 0, 0, 0.4);  
+  
+  /* Disable Text Selection */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
+
+.title-container > h1 {
+  font-weight: normal;
+}
+
+/* Navi */
 
 .content-navi {
   grid-row: 2;
   grid-column: 1 / 2;
 
   display: flex;
+  position: fixed;
+  top: 150px;
   flex-direction: column;
-  border: 5px solid limegreen;
+  height: 100%;
+  font-family: $header;
 }
 
 .content-navi-item {
-  border: 2px solid red;
+  margin: 2.5px 2.5px 2.5px 25px;
   padding: 10px 20px 10px 20px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+/* Content */
+
+code {
+  font-family: $code;
+  color: $codegeneric;
+  background-color: $codebg;
+  padding: 2px 8px 2px 8px;
+  border-radius: 5px;
+}
+
+.code-arg-required {
+  color: $codeargreq;
+}
+
+.code-example {
+  color: $codeexample;
+}
+
+.code-generic {
+  color: $codeargdesc;
 }
 
 .content-container {
   grid-row: 2;
   grid-column: 2 / 4;
   
-  border: 5px solid aqua;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
-.content-body-container {
-  border: 5px solid limegreen;
-}
-
-h2 {
+.content-container > h2 {
   font-size: 1.75rem;
+  font-family: $header;
   font-weight: normal;
-  border: 5px solid blue;
+  text-align: center;
+  margin-top: 0;
 }
 
 .content-body {
-  border: 5px solid blue;
   font-size: 1.125rem;
+  font-family: $content;
+}
+
+/* Table */
+
+table {
+  font-size: 1rem;
+  text-align: left;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: text-top;
+}
+
+/* Commands Listing */
+
+.command-container {
+  background-color: $background;
+  font-size: 1rem;
+  margin: 2px 0 2px 0;
+  padding: 15px 30px 15px 30px;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.command-name {
+  margin: 1px;
+  flex-basis: 280px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.command-name-title > h3 {
+  font-size: 1.5rem;
+  font-family: $header;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.command-description {
+  width: 100%;
+  margin: 1px;
+}
+
+.command-description-sub {
+  margin-top: 0.5em;
+  margin-left: 1.125em;
+  margin-bottom: 0.5em;
+}
+
+/* Supported Leagues Grid */
+
+.leagues-container {
+  display: grid;
+  grid-template-columns: 180px auto auto auto;
+  grid-gap: 2px;
+  font-size: 1rem;
+}
+
+.leagues-item {
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: $background;
+  font-family: $header;
+  font-weight: bold;
+
+  &-league-title {
+    @extend .leagues-item;
+    text-align: left;
+  }
+
+  &-league-support-full {
+    @extend .leagues-item;
+    border-bottom: 4px solid rgb(50, 205, 50);
+    background-color: rgb(50, 205, 50, 0.6);
+    font-family: $content;
+    font-weight: normal;
+    color:white;
+  }
+
+  &-league-support-partial {
+    @extend .leagues-item;
+    border-bottom: 4px solid rgb(255, 165, 0);
+    background-color: rgb(255, 165, 0, 0.6);
+    font-family: $content;
+    font-weight: normal;
+    color:white;
+  }
+
+  &-league-support-no {
+    @extend .leagues-item;
+    border-bottom: 4px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0, 0.6);
+    font-family: $content;
+    font-weight: normal;
+    color:white;
+  }
+}
+
+.leagues-item-league-title > code {
+  font-weight: normal;
+}
+
+/* Footer */ 
+
+footer {
+  grid-row: 3;
+  grid-column: 2 / 4;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 0.925rem;
 }
 
 // Mobile View
 @media screen and (max-width: 767px) {
-  .content-navi {
-    grid-column: 1 / 4;
-    grid-row: 2;
-
+  .parent-container {
     display: flex;
+    flex-direction: column;
+  }
+
+  .content-navi {
+    display: flex;
+    position: static;
+    top: 0;
     flex-direction: row;
     justify-content: center;
-    border: 5px solid limegreen;
     max-width: 100%;
   }
 
-  .content-container {
-    grid-row: 3;
-    grid-column: 1 / 4;
+  .content-navi-item {
+    margin: 2.5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .command-container {
+    flex-direction: column;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .command-name {
+    flex-basis: 100%;
+    flex-shrink: 1;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .command-name-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .command-description {
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+  }
+  
+  .leagues-item-league-title > code {
+    font-weight: normal;
+    font-size: 0.825rem;
   }
 }
