@@ -297,10 +297,12 @@ footer {
 
 // Mobile View
 @media screen and (max-width: 767px) {
-  .content-navi {
-    grid-column: 1 / 4;
-    grid-row: 2;
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .content-navi {
     display: flex;
     position: static;
     top: 0;
@@ -313,11 +315,6 @@ footer {
     margin: 2.5px;
     padding: 10px;
     text-align: center;
-  }
-
-  .content-container {
-    grid-row: 3;
-    grid-column: 1 / 4;
   }
   
   .command-container {
@@ -339,5 +336,10 @@ footer {
   .command-description {
     padding: 5px 10px 5px 10px;
     width: 100%;
+  }
+  
+  .leagues-item-league-title > code {
+    font-weight: normal;
+    font-size: 0.825rem;
   }
 }
