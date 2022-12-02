@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 export default function ReleaseNotes() {
   return (
     <Layout title="Release Notes">
-      <h3>Version 1 Alpha 4.4 (November 28th, 2022) - Current Release</h3>
+      <h4>Version 1 Alpha 4.4 (November 28th, 2022) - Current Release</h4>
       
       <ul>
         <li>Adjusted image displays for <code>z-events</code> and <code>z-teamstats</code></li>
@@ -20,13 +20,13 @@ export default function ReleaseNotes() {
         </ul>
       </ul>
       
-      <h3>Version 1 Alpha 4.3 (November 20th, 2022)</h3>
+      <h4>Version 1 Alpha 4.3 (November 20th, 2022)</h4>
       <ul>
         <li>Added link to help documentation in <code>z-help</code> command</li>
         <li>Re-wrote some bot embed messages</li>
       </ul>
 
-      <h3>Version 1 Alpha 4.2 (November 7th, 2022)</h3>
+      <h4>Version 1 Alpha 4.2 (November 7th, 2022)</h4>
       <ul>
         <li>Added support for the 2022 FIFA World Cup</li>
         <ul>
@@ -36,7 +36,7 @@ export default function ReleaseNotes() {
         <li>Re-wrote some bot embed messages</li>
       </ul>
 
-      <h3>Version 1 Alpha 4.1 (June 18th, 2022)</h3>
+      <h4>Version 1 Alpha 4.1 (June 18th, 2022)</h4>
       <ul>
         <li>Added the <code>z-teamstats</code> command</li>
         <li><code>z-boxscore</code> is now mainly <code>z-events</code></li>
@@ -47,13 +47,13 @@ export default function ReleaseNotes() {
         <li>Updated <code>z-leagues</code> and <code>z-help</code></li>
       </ul>
 
-      <h3>Version 1 Alpha 4 (May 28th, 2022)</h3>
+      <h4>Version 1 Alpha 4 (May 28th, 2022)</h4>
       <ul>
         <li>Adjusted sizing logic for <code>z-boxscore</code> images</li>
         <li>Upscaled images for <code>z-scores</code> and <code>z-boxscore</code></li>
       </ul>
       
-      <h3>Version 1 Alpha 3 (May 11th, 2022)</h3>
+      <h4>Version 1 Alpha 3 (May 11th, 2022)</h4>
       <ul>
         <li>Added image display for <code>z-boxscore</code> command</li>
         <li>Added club name override for Wolves</li>
@@ -66,19 +66,19 @@ export default function ReleaseNotes() {
         <li>Re-wrote <code>z-feedback</code> command and embed messages</li>
       </ul>
 
-      <h3>Version 1 Alpha 2.2 (May 7th, 2022)</h3>
+      <h4>Version 1 Alpha 2.2 (May 7th, 2022)</h4>
       <ul>
         <li>Made arguments for <code>z-scores</code> and <code>z-boxscore</code> command case insensitive</li>
         <li>Added timezone for match times (Eastern time only)</li>
         <li>Changed font for the date in <code>z-scores</code> display</li>
       </ul>
 
-      <h3>Version 1 Alpha 2.1 (May 6th, 2022)</h3>
+      <h4>Version 1 Alpha 2.1 (May 6th, 2022)</h4>
       <ul>
         <li>Fixed issue with CanPL team names not appearaing correctly for <code>z-scores</code> command</li>
       </ul>
 
-      <h3>Version 1 Alpha 2 (May 6th, 2022)</h3>
+      <h4>Version 1 Alpha 2 (May 6th, 2022)</h4>
       <ul>
         <li>Added support for UEFA Champions League</li>
         <li>Fixed issues with null away colours and range for CanPL games not working</li>
@@ -89,7 +89,7 @@ export default function ReleaseNotes() {
         <li>Updated <code>z-leagues</code> command</li>
       </ul>
 
-      <h3>Version 1 Alpha 1.2 (May 5th, 2022)</h3>
+      <h4>Version 1 Alpha 1.2 (May 5th, 2022)</h4>
       <ul>
         <li>Added image display for <code>z-scores</code> command</li>
         <ul>
@@ -98,12 +98,12 @@ export default function ReleaseNotes() {
         <li>Added a check for tri-code name overrides</li>
       </ul>
 
-      <h3>Version 1 Alpha 1.1 (May 3rd, 2022)</h3>
+      <h4>Version 1 Alpha 1.1 (May 3rd, 2022)</h4>
       <ul>
         <li>Fixed tri-code for Atletico Ottawa</li>
       </ul>
 
-      <h3>Version 1 Alpha 1 (May 3rd, 2022)</h3>
+      <h4>Version 1 Alpha 1 (May 3rd, 2022)</h4>
       <ul>
         <li>🏁 Release of PhonzeeBot 🥳</li>
         <li>Added support for the following leagues:</li>
