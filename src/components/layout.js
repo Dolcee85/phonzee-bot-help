@@ -25,7 +25,7 @@ export default function Layout ({ title, children}) {
 
     <footer>
       <p>PhonzeeBot Help Documentation &copy; T-&infin; 2022</p>
-      <p>PhonzeeBot version: { phonzeeBotVersion }</p>
+      <p>Bot Version: { phonzeeBotVersion }</p>
     </footer>
 
     </div>
