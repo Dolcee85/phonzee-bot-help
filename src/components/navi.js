@@ -10,7 +10,9 @@ export default function Header() {
         <div class="content-navi-item">
           <Link to="/leagues">Supported Leagues</Link>
         </div>
-        <div class="content-navi-item">Release Notes</div>
+        <div class="content-navi-item">
+          <Link to="/release-notes">Release Notes</Link>
+        </div>
     </nav>
   );
 }
