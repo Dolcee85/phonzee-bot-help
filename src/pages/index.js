@@ -2,7 +2,7 @@
  * 
  * T-∞ ヽ༼ຈل͜ຈ༽ﾉ 
  * 
- * Launched yyyy-mm-dd
+ * Launched 2022-11-20
  * 
  */
 
@@ -161,7 +161,7 @@ export default function Home() {
               <code class="code-generic">tomorrow</code>: Get scores for tomorrow only.<br/>
               <code class="code-generic">next</code> or <code class="code-generic">n</code>: Get upcoming matches, up to a week.
             </div>
-            If range is not given, it will get most recent scores.
+            If range is not given, it will get most recent scores ().
           </p>
           <p>
             <code class="code-example">z-s mls p</code> shows scores for previously played MLS matches.
