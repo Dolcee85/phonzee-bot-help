@@ -13,6 +13,12 @@ export default function Header() {
         <div class="content-navi-item">
           <Link to="/release-notes">Release Notes</Link>
         </div>
+        <div class="content-navi-item">
+          <Link to="/known-issues">Known Issues</Link>
+        </div>
+        <div class="content-navi-item">
+          <Link to="/planned-features">Planned Features</Link>
+        </div>
     </nav>
   );
 }
