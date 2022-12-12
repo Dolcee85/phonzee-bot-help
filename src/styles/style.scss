@@ -228,6 +228,29 @@ td {
   margin-bottom: 0.5em;
 }
 
+/* Issue */
+/* (for known issues) */
+
+.issue-container {
+  background-color: $background;
+  font-size: 1rem;
+  margin: 2px 0 2px 0;
+  padding: 15px 30px 15px 30px;
+  
+  display: block;
+}
+
+.issue-desc {
+  display: block;
+  margin-left: 1em;
+  border-left: 2px solid gray;
+}
+
+.issue-desc > ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
 /* Supported Leagues Grid */
 
 .leagues-container {
