@@ -14,8 +14,8 @@ export default function Home() {
     */
     <Layout title="Known Issues">
       <div class="issue-container">
-        <p>
-          Live scores for Canadian Premier League games are not working properly.
+        <p class="issue-title">
+          ⚠️ Live scores for Canadian Premier League games are not working properly.
         </p>
         <div class="issue-desc">
           <ul>
@@ -25,7 +25,7 @@ export default function Home() {
               <b>Description:</b> After executing the <code>z-s cpl</code> command, games within the 
               specified range will show, but live scores and results will not.
             </li>
-            <li><b>Status:</b> Not fixed</li>
+            <li><b>Status:</b> ❌ Not fixed</li>
           </ul>
         </div>
       </div>
