@@ -4,7 +4,18 @@ import Layout from '../components/layout';
 export default function ReleaseNotes() {
   return (
     <Layout title="Release Notes">
-      <h4>Version 1 Alpha 4.4 (November 28th, 2022) - Current Release</h4>
+      <h4>Version 1 Alpha 4.5 (January 7th, 2023) - Current Release</h4>
+      <ul>
+        <li><code>today</code> is now the default time-range for the <code>z-scores</code> command</li>
+        <ul>
+          <li>
+            If there are no games for <code>today</code>, Phonzee will then look up games 
+            with <code>upcoming</code> as the time-range
+          </li>
+        </ul>
+      </ul>
+
+      <h4>Version 1 Alpha 4.4 (November 28th, 2022)</h4>
       
       <ul>
         <li>Adjusted image displays for <code>z-events</code> and <code>z-teamstats</code></li>
