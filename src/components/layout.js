@@ -4,7 +4,7 @@ import icon from '../images/icon.png';
 
 import Navi from './navi';
 
-const phonzeeBotVersion = "1-a.4.4"
+const phonzeeBotVersion = "1-a.4.5"
 
 export default function Layout ({ title, children}) {
   return (
