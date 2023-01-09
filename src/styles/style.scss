@@ -165,6 +165,11 @@ code {
   margin-top: 0;
 }
 
+h4 {
+  font-size: 1.15rem;
+  font-family: $header;
+}
+
 .content-body {
   font-size: 1.125rem;
   font-family: $content;
@@ -221,6 +226,34 @@ td {
   margin-top: 0.5em;
   margin-left: 1.125em;
   margin-bottom: 0.5em;
+}
+
+/* Issue */
+/* (for known issues) */
+
+.issue-container {
+  background-color: $background;
+  font-size: 1rem;
+  margin: 2px 0 2px 0;
+  padding: 15px 30px 15px 30px;
+  
+  display: block;
+}
+
+.issue-title {
+  font-family: $header;
+  font-size: 1.125rem;
+}
+
+.issue-desc {
+  display: block;
+  margin-left: 1em;
+  border-left: 2px solid gray;
+}
+
+.issue-desc > ul {
+  list-style-type: none;
+  padding-left: 1em;
 }
 
 /* Supported Leagues Grid */
@@ -286,6 +319,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-family: $header;
   font-size: 0.925rem;
 }
 
@@ -300,7 +334,7 @@ footer {
     display: flex;
     position: static;
     top: 0;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     max-width: 100%;
   }

@@ -4,7 +4,7 @@ import icon from '../images/icon.png';
 
 import Navi from './navi';
 
-const phonzeeBotVersion = "1-a.4.3"
+const phonzeeBotVersion = "1-a.4.5"
 
 export default function Layout ({ title, children}) {
   return (
@@ -25,7 +25,7 @@ export default function Layout ({ title, children}) {
 
     <footer>
       <p>PhonzeeBot Help Documentation &copy; T-&infin; 2022</p>
-      <p>PhonzeeBot version: { phonzeeBotVersion }</p>
+      <p>Bot Version: { phonzeeBotVersion }</p>
     </footer>
 
     </div>

@@ -2,7 +2,7 @@
  * 
  * T-∞ ヽ༼ຈل͜ຈ༽ﾉ 
  * 
- * Launched yyyy-mm-dd
+ * Launched 2022-11-20
  * 
  */
 
@@ -155,10 +155,13 @@ export default function Home() {
             <code>range</code>: Determine the schedule range of the scores: <br/>
             <div class="command-description-sub">
               <code class="code-generic">previous</code> or <code class="code-generic">p</code>: Get scores from previous days, up to a week.<br/>
+              <code class="code-generic">yesterday</code>: Get scores from yesterday only.<br/>
+              <code class="code-generic">today</code>: Get scores for today only.<br/>
               <code class="code-generic">current</code> or <code class="code-generic">c</code>: Get most recent scores, including scores for today, from yesterday, and for tomorrow. The default range.<br/>
+              <code class="code-generic">tomorrow</code>: Get scores for tomorrow only.<br/>
               <code class="code-generic">next</code> or <code class="code-generic">n</code>: Get upcoming matches, up to a week.
             </div>
-            If range is not given, it will get most recent scores.
+            If range is not given, it will get most recent scores ().
           </p>
           <p>
             <code class="code-example">z-s mls p</code> shows scores for previously played MLS matches.
