@@ -4,6 +4,22 @@ import Layout from '../components/layout';
 export default function ReleaseNotes() {
   return (
     <Layout title="Release Notes">
+      <h4>Version 1 Alpha 4.6 - Future Release</h4>
+      <ul>
+        <li>
+          Re-worked the logic for which games are shown if there is no games for today for
+          the <code>z-scores</code> command without an argument:
+          <ul>
+            <li>First, it checks whether there's games tomorrow</li>
+            <li>If there's no games tomorrow, then it checks for games up to 6 days ahead</li>
+          </ul>
+        </li>
+        <li>
+          The argument <code>current</code> for <code>z-scores</code> command has been made 
+          obsolete
+        </li>
+      </ul>
+
       <h4>Version 1 Alpha 4.5 (January 7th, 2023) - Current Release</h4>
       <ul>
         <li><code>today</code> is now the default time-range for the <code>z-scores</code> command</li>
