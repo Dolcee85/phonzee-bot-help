@@ -2,6 +2,9 @@ Git repository for the Phonzee Help Documentation gatsbyjs site.
 
 ## Release Notes
 
+2023/09/05: Version 1.2.1 release
+ - Migrated website to Netlify
+
 2023/01/14: Version 1.2 release
  - Added release notes for bot version 1 alpha 4.6
 
