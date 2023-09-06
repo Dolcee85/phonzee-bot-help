@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 export default function ReleaseNotes() {
   return (
     <Layout title="Release Notes">
-      <h4>Version 1 Alpha 4.6 (January 14th, 2023) - Current Release</h4>
+      <h4>Version 1 Alpha 4.6 - Future Release</h4>
       <ul>
         <li>
           Re-worked the logic for which games are shown if there is no games for today for
@@ -20,7 +20,7 @@ export default function ReleaseNotes() {
         </li>
       </ul>
 
-      <h4>Version 1 Alpha 4.5 (January 7th, 2023)</h4>
+      <h4>Version 1 Alpha 4.5 (January 7th, 2023) - Current Release</h4>
       <ul>
         <li><code>today</code> is now the default time-range for the <code>z-scores</code> command</li>
         <ul>
